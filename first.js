@@ -126,3 +126,36 @@ post.reposts=[11,33];
 console.log(post);
 delete post.content;
 console.log(post);                                                                                                                                 
+
+console.log("nested object"); 
+const classinfo={
+  aman:{
+     grade:"a",
+     city:"delhi"
+  },
+  shradha:{
+      grade:"b",
+      city:"pune"
+  },
+  karaan:{
+      grade:"c",
+      city:"mumbai"
+  }
+};
+
+console.log(classinfo);
+ //math
+ //Math.pi
+// undefined
+// Math.PI
+// 3.141592653589793
+// Math.E
+// 2.718281828459045
+// Math.abs(-12);
+// 12
+//Math.pow(3,2)  = 9;
+//Math.floor(5.5)  =5;
+//Math.ceil(5.6) =6;
+let abc=Math.random();
+console.log("random FROM 1-10-=",abc*10+1);  
+console.log("random no from 20-25",abc*5+20);

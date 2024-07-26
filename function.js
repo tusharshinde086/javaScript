@@ -2,12 +2,14 @@ function a(){
     console.log("I am reading book ");
 }
 function b(){
+    
     console.log("what are you doing");
     }
 
 b();
 function c(msg){
     console.log(msg);
+
 }
 c("I love you");
 //sum
@@ -67,7 +69,7 @@ function getsum(n){
 let ab=getsum(20);
 console.log("sum of no = ",ab);
 
-//concat
+//concat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 let strr= ["h","hello","bye","!"];
 
 function concat(strr){
@@ -81,3 +83,6 @@ console.log(strr);
 let mix=concat(strr);
 console.log(mix);
 
+function tree(){
+    for 
+}

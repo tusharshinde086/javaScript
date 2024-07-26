@@ -81,9 +81,28 @@ console.log(strr);
 let mix=concat(strr);
 console.log(mix);
 
-console.log("-----------------------------");
+console.log("\n---------------------------------\n");
+console.log("forEach")
+console.log("\n------------------------------------\n");
 
 let arr =["hello",2,"welcome",4,5,6,"my ",8,9,"hi"];
 arr.forEach((val,idx,arr)=> {
     console.log(idx,val,arr);
 });
+console.log("\n-----------------------------------\n");
+
+
+let practice = (val,idx) => {
+     console.log(idx,val);
+};
+arr.forEach(practice);
+console.log("\n------------------------------------\n");
+console.log("map")
+console.log("\n------------------------------------\n");
+
+let numm=[11,22,33,44,55,66,77,88,99];
+let summ =numm.map((val)=>{
+   return val %2;
+});
+console.log(summ);
+console.log("\n------------------------------------\n");

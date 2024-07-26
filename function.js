@@ -81,3 +81,9 @@ console.log(strr);
 let mix=concat(strr);
 console.log(mix);
 
+console.log("-----------------------------");
+
+let arr =["hello",2,"welcome",4,5,6,"my ",8,9,"hi"];
+arr.forEach((val,idx,arr)=> {
+    console.log(idx,val,arr);
+});

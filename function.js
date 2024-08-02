@@ -85,6 +85,7 @@ console.log("\n---------------------------------\n");
 console.log("forEach")
 console.log("\n------------------------------------\n");
 
+
 let arr =["hello",2,"welcome",4,5,6,"my ",8,9,"hi"];
 arr.forEach((val,idx,arr)=> {
     console.log(idx,val,arr);
@@ -106,3 +107,21 @@ let summ =numm.map((val)=>{
 });
 console.log(summ);
 console.log("\n------------------------------------\n");
+console.log("  this fu");
+
+const tuss= { 
+         name:"pravin",
+          email:"mylif",
+          eng :22,
+           math :11,
+           sci: 44,
+
+          getavg(){
+            let avg= (this.eng +this.math + this.sci )/3;
+             console.log(avg);
+
+          }
+}
+console.log(tuss.getavg());
+console.log("--------------------------");
+console.log(this);

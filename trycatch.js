@@ -31,20 +31,20 @@ const mul=(a,b)=> a*b;// implicit array
 console.log(mul(4,5));                                                                    
 console.log("_--------------------------------------\n\t"); 
 
-// console.log("set timeout");
+console.log("set timeout");
 
-// setTimeout(() => {
-//     console.log("tushar shinde");
-// },2000);
+setTimeout(() => {
+    console.log("tushar shinde");
+},2000);
 
-// console.log("hello there");
+console.log("hello there");
 console.log("_--------------------------------------\n\t"); 
-// console.log("set interval");
-// let id= setInterval(() => {
-//     console.log("i love you?");
-// },2000);
+console.log("set interval");
+let id= setInterval(() => {
+    console.log("i love you?");
+},3000);
 
-// console.log(id);   //to stop clearInterval(id)
+console.log(id);   //to stop clearInterval(id)
 console.log("_--------------------------------------\n\t"); 
 
 const student ={

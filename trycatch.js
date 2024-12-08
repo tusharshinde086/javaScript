@@ -65,14 +65,48 @@ console.log(square(4));
 console.log("\n_--------------------------------------\n\t"); 
 
 let id3 = setInterval(() => {
-    console.log("hello hi ");
-},2000);
+    console.log("hello hi  fi  ");
+},6000);
        
 setTimeout(() => {
+    clearInterval(id);
     clearInterval(id3);
     console.log("intervel stop");
 },10000);
 
 console.log("\n_--------------------------------------\n\t"); 
 
+let id4 = setInterval(() => {
+    console.log("hello hi  tiger  ");
+},2000);
+       
+setTimeout(() => {
+    clearInterval(id4);
+    console.log("intervel stop");
+},10000);
 
+console.log("\n_--------------------------------------\n\t"); 
+
+const arrayAverage = (arr) => {
+   let total = 0 
+   for ( let number of arr){
+    total += number;
+   }
+   return total/arr.length ;
+};
+let arr = [1,2,3,4,5,6];
+console.log(arrayAverage(arr));
+
+console.log("\n_--------------------------------------\n\t"); 
+
+const isEven = (num3) => {
+if (num3 %2 == 0){
+    console.log("Even number");
+} else {
+    console.log("odd number");
+}
+}
+let num3 = 4;
+console.log(isEven(num3));
+
+console.log("\n_--------------------------------------\n\t"); 

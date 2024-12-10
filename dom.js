@@ -17,4 +17,6 @@ console.log(document.querySelectorAll("h1"))
 console.log(document.querySelectorAll(".box"))
 
 
-console.log
+let para =document.querySelector("p");
+console.log(para);
+console.dir(para);

@@ -96,6 +96,6 @@ let body = document.querySelector("body")
 //body.appendChild(newP)
 let btn = document.createElement('button')
 
-
-
-
+let p = document.querySelector('p')
+console.dir(p.insertAdjacentElement('beforebegin',btn))
+console.dir(p.insertAdjacentElement('afterbegin',btn))

@@ -99,11 +99,18 @@ console.log(body.appendChild(newP))
 let btn = document.createElement('button')
 // btn.innerText="Click Me"
 // box.appendChild(btn)
-let p = document.querySelector('p')
+let p = document.querySelector('p');
 console.dir(p.insertAdjacentElement('beforebegin',btn))
 console.dir(p.insertAdjacentElement('afterbegin',btn))
+//newP.append("hello tushar")
+//newP.append(btn)
 
+//box.prepend(newP)
 
+// p.insertAdjacentElement('beforebegin',btn);
+//p.insertAdjacentElement('beforeend',btn);
+
+// p.insertAdjacentElement('afterend',btn);
 
                                                                            
 

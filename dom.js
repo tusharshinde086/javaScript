@@ -111,5 +111,8 @@ console.dir(p.insertAdjacentElement('afterbegin',btn))
 //p.insertAdjacentElement('beforeend',btn);
 
 // p.insertAdjacentElement('afterend',btn);
+    
+// body.removeChild(p)
 
-  
+//(btn.remove()
+//body.remove()                                                                     

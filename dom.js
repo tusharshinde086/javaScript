@@ -91,11 +91,21 @@ let newP = document.createElement('p');
 console.dir(newP)
 newP.innerText = "Hi,I am a new P";
 console.dir(newP)
+//box.appendChild(newP)
+<p>​Hi,I am a new P​</p>​
 console.log(newP)
 let body = document.querySelector("body")
-//body.appendChild(newP)
+console.log(body.appendChild(newP))
 let btn = document.createElement('button')
-
+// btn.innerText="Click Me"
+// box.appendChild(btn)
 let p = document.querySelector('p')
 console.dir(p.insertAdjacentElement('beforebegin',btn))
 console.dir(p.insertAdjacentElement('afterbegin',btn))
+
+
+
+                                                                           
+
+
+

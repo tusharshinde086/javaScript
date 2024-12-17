@@ -92,7 +92,7 @@ console.dir(newP)
 newP.innerText = "Hi,I am a new P";
 console.dir(newP)
 //box.appendChild(newP)
-<p>​Hi,I am a new P​</p>​
+
 console.log(newP)
 let body = document.querySelector("body")
 console.log(body.appendChild(newP))
@@ -112,7 +112,4 @@ console.dir(p.insertAdjacentElement('afterbegin',btn))
 
 // p.insertAdjacentElement('afterend',btn);
 
-                                                                           
-
-
-
+  

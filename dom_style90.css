@@ -6,3 +6,48 @@
     border: 1px solid black;
     background-color: pink;
 }
+
+
+input {
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#btn:hover {
+    background-color: #45a049;
+}
+
+.h1{
+    color: purple;
+}
+.p{
+    font-family: bold;
+}
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.btnStyle {
+    background-color: #008CBA;
+    border-radius: 8px;
+}
+
+.btnStyle:hover {
+    background-color: #007B9F;
+}

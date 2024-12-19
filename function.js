@@ -5,7 +5,7 @@ function b(){
     console.log("what are you doing");
     }
 
-b();
+//b();
 function c(msg){
     console.log(msg);
 }

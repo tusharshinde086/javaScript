@@ -141,14 +141,17 @@ function savetoDB(data) {
   
   // Call savetoDB and handle success/failure
   setTimeout(() => {
-    
-  savetoDB("tushar shinde")
-    .then((message) => {
+
+  let request = savetoDB("tushar shinde");
+  
+    request.then((message) => {
       console.log(message);
     })
-    .catch((error) => {
+    request.catch((error) => {
       console.log(error);
     });
+
+    
 
 }, 12000);
 

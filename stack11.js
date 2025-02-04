@@ -30,3 +30,12 @@ console.log("-----------------------------------");
 
 // Breakpoints 
 
+console.log("-----------------------------------");
+
+//js is  single threaded 
+
+setTimeout( function () {
+    console.log("tushar shinde ");
+},2000);
+
+console.log("hello ....") ;

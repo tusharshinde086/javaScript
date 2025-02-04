@@ -88,3 +88,30 @@ console.log("-----------------------------------");
 
 //  promises  
 
+
+function savetoDB(data,success , failure ){
+    let internetSpeed = Math.floor(Math.random()* 10) +1  ;
+    console.log("your speed" ,internetSpeed);
+   if(internetSpeed > 4 ){
+    success(data);
+    
+   }else{
+      failure(data);
+   }
+}
+setTimeout(() => {
+    savetoDB("tushar shinde data",(data)=>{
+        console.log("your data was succes saved" , data),()=>{
+            savetoDB("hello world" , ()=>{
+                console.log("your succes 2 data was saved" , data);
+            },()=>{
+                console.log("week  connection failure 2  data not saved ");
+            }
+        )
+        }
+    },
+    ()=>{
+        console.log("week  connection  failure data not saved ");
+    }
+    )
+},12000);

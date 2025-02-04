@@ -111,20 +111,21 @@ setTimeout(() => {
                     savetoDB("new data",
                         (data)=>{
                             console.log("Your third success 3  data was saved:", data);
-                        },
-                        ()=>{
+                        },()=>{
                             console.log("Weak connection, third data not saved.");
                         }
                      ) 
 
-                },
-                () => {
+                },() => {
                     console.log("Weak connection, second data not saved.");
                 }
             );
-        },
-        () => {
+        },() => {
             console.log("Weak connection, first data not saved.");
         }
     );
 }, 12000);
+
+
+console.log("-----------------------------------");
+

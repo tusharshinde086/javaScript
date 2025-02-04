@@ -107,7 +107,16 @@ setTimeout(() => {
             // Calling savetoDB again inside success callback
             savetoDB("hello world",
                 (data) => {
-                    console.log("Your second success data was saved:", data);
+                    console.log("Your second success 2 data was saved:", data);
+                    savetoDB("new data",
+                        (data)=>{
+                            console.log("Your third success 3  data was saved:", data);
+                        },
+                        ()=>{
+                            console.log("Weak connection, third data not saved.");
+                        }
+                     ) 
+
                 },
                 () => {
                     console.log("Weak connection, second data not saved.");

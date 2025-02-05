@@ -204,6 +204,11 @@ setTimeout(() => {
         .then((message) => {
             console.log("data 2 saved ");
             console.log(message);
+            return savetoDB("varshali patil");
+        })
+        .then((message)=>{
+            console.log("data 3  saved ");
+            console.log(message);
         })
       .catch((error) => {
            console.log(error);

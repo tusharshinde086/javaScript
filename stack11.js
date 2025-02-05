@@ -36,16 +36,18 @@ console.log("-----------------------------------");
 
 setTimeout( function () {
     console.log("tushar shinde ");
+    console.log("-----------------------------------");
 },2000);
 setTimeout( function () {
     console.log("hello world ");
+    console.log("-----------------------------------");
 },2000);
 
 console.log("hello ....") ;
 
 //callback hell 
 
-console.log("-----------------------------------");
+// console.log("-----------------------------------");
 
 let h1 = document.querySelector("h1");
 
@@ -77,6 +79,7 @@ changeColor("purple", 6000,()=> {
 setTimeout(() => {
     h1.style.color = "blue";
     console.log("color chaged to blue" );
+    console.log("-----------------------------------");
 }, 11000);
 
 setTimeout(() => {
@@ -84,7 +87,7 @@ console.log("-----------------------------------");
 }, 11000);
 
 
-console.log("-----------------------------------");
+// console.log("-----------------------------------");
 
 //  promises  
 
@@ -150,6 +153,7 @@ function savetoDB(data) {
 
   
   // Call savetoDB and handle success/failure
+  
   setTimeout(() => {
 
   let request = savetoDB("tushar shinde");
@@ -161,9 +165,50 @@ function savetoDB(data) {
       console.log(error);
     });
 
-    
+    console.log("-----------------------------------");
 
 }, 12000);
 
-console.log("-----------------------------------");
+//console.log("-----------------------------------");
 
+setTimeout(() => {
+
+ savetoDB("tushar shinde")
+    .then(() => {
+        console.log("data 1 saves to db, promise was resolve ");
+        savetoDB("sakshi chavan ")
+         .then((message) =>{
+            console.log("data 2 saved ");
+            console.log(message);
+         })
+      })
+   .catch((error) => {
+        console.log(error);
+      });
+
+      console.log("-----------------------------------");
+  
+  }, 13000);
+
+  //console.log("-----------------------------------");
+
+  setTimeout(() => {
+
+    savetoDB("pandu prachi ")
+       .then((message) => {
+           console.log("data 1 saves to db, promise was resolve ");
+           console.log(message);
+           return savetoDB("pravin junne ");
+            
+         })
+        .then((message) => {
+            console.log("data 2 saved ");
+            console.log(message);
+        })
+      .catch((error) => {
+           console.log(error);
+         });
+
+         console.log("-----------------------------------");
+     
+     }, 14000);

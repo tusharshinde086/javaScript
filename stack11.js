@@ -217,3 +217,38 @@ setTimeout(() => {
          console.log("-----------------------------------");
      
      }, 14000);
+
+       //console.log("-----------------------------------");
+
+       
+  setTimeout(() => {
+
+       function changeColor(color,delay,nextColorChange) {
+        new Promise(()=>{
+            
+        })
+        setTimeout(()=>{
+            h1.style.color = color;
+            console.log("color chaged to " , color );
+           if(nextColorChange) nextColorChange();
+        },delay);
+    }
+    
+ 
+    
+    //callback nesting 
+    
+    changeColor("purple", 15000,()=> {
+        changeColor("gray",1000, ()=> {
+            changeColor("white",1000,()=> {
+                changeColor("lime",1000,()=> {
+                    changeColor("maroon",1000);
+                });
+            });
+        });
+    }); 
+
+
+    console.log("-----------------------------------");
+     
+     }, 14000);

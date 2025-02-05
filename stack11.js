@@ -138,6 +138,16 @@ function savetoDB(data) {
       }
     });
   }
+
+  
+// savetoDB("tushar shinde");
+//   .then((message) => {
+//       console.log(message);
+//     })
+//  .catch((error) => {
+//       console.log(error);
+//     });
+
   
   // Call savetoDB and handle success/failure
   setTimeout(() => {
